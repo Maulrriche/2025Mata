@@ -1,0 +1,121 @@
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Baskerville", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.911);
+    padding: 4vw;
+}
+
+/* Contenedor del título */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bordr: 2px solid #333;
+    border-radius: 15px;
+    padding: 15px 20px;
+    background: linear-gradient(
+    45deg, 
+    #4a0000 0%,      /* Rojo vino muy oscuro (sombra) */
+    #8b0000 20%,     /* Carmesí profundo */
+    #dc143c 40%,     /* Rojo brillante */
+    #ff6b81 50%,     /* Reflejo de luz (el "brillo" metálico) */
+    #dc143c 60%,     /* Rojo brillante */
+    #8b0000 80%,     /* Carmesí profundo */
+    #4a0000 100%     /* Rojo vino muy oscuro */
+  );
+
+  /* Aumentamos el tamaño para que el reflejo se vea fluido */
+  background-size: cover;
+  
+  /* Añadimos un sutil efecto de "pulido" metálico */
+  box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 20vw;
+    height: auto;
+}
+
+.header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 10vw;
+}
+
+/* Contenedor principal */
+.main {
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+    gap: 10px;
+}
+
+/* Cuadro derecho (70%) */
+.content {
+    width: 80%;
+    background: linear-gradient(
+    45deg, 
+    #4a0000 0%,      /* Rojo vino muy oscuro (sombra) */
+    #8b0000 20%,     /* Carmesí profundo */
+    #dc143c 40%,     /* Rojo brillante */
+    #ff6b81 50%,     /* Reflejo de luz (el "brillo" metálico) */
+    #dc143c 60%,     /* Rojo brillante */
+    #8b0000 80%,     /* Carmesí profundo */
+    #4a0000 100%     /* Rojo vino muy oscuro */
+  );
+
+  /* Aumentamos el tamaño para que el reflejo se vea fluido */
+  background-size: cover;
+  
+  /* Añadimos un sutil efecto de "pulido" metálico */
+  box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 4vw;
+    margin: auto;
+}
+
+.content h2 {
+    font-size: 4vw;
+}
+
+.content p {
+    font-size: 3vw;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Cuando el elemento es visible */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content img {
+    border: 1px solid black;
+    width: 80%;
+        border-radius: 40px;
+    padding: auto;
+    margin: 5vw
+}
+
+.content video {
+    border: 1px solid black;
+    width: 80%;
+        border-radius: 40px;
+    padding: auto;
+    margin: 5vw;
+}

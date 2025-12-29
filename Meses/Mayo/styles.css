@@ -1,0 +1,113 @@
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Baskerville", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+        borer: 1px solid black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 4vw;
+}
+
+/* Contenedor del título */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bordr: 2px solid #333;
+    border-radius: 15px;
+    padding: 15px 20px;
+    background: linear-gradient(
+    135deg, 
+    #f5d1e3 0%,    /* Rosa muy claro (brillo) */
+    #e8a2c2 25%,   /* Rosa medio */
+    #d17da5 50%,   /* Rosa profundo (sombra) */
+    #f2b9d4 75%,   /* Reflejo secundario */
+    #e8a2c2 100%   /* Cierre de tono */
+  );
+  
+  /* Añadimos un ligero efecto de textura/brillo */
+  background-size: 200% 200%;
+  box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 20vw;
+    height: auto;
+}
+
+.header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 10vw;
+}
+
+/* Contenedor principal */
+.main {
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+    gap: 10px;
+}
+
+/* Cuadro derecho (70%) */
+.content {
+    width: 80%;
+    background: linear-gradient(
+    135deg, 
+    #f5d1e3 0%,    /* Rosa muy claro (brillo) */
+    #e8a2c2 25%,   /* Rosa medio */
+    #d17da5 50%,   /* Rosa profundo (sombra) */
+    #f2b9d4 75%,   /* Reflejo secundario */
+    #e8a2c2 100%   /* Cierre de tono */
+  );
+  
+  /* Añadimos un ligero efecto de textura/brillo */
+  background-size: 200% 200%;
+  box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+}
+
+.content h2 {
+    font-size: 4vw;
+}
+
+.content p {
+    font-size: 3vw;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Cuando el elemento es visible */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content img {
+    border: 1px solid black;
+    width: 80%;
+        border-radius: 40px;
+    padding: auto;
+    margin: 5vw
+}
+
+.content video {
+    border: 1px solid black;
+    width: 80%;
+        border-radius: 40px;
+    padding: auto;
+    margin: 5vw
+}
